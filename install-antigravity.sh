@@ -33,7 +33,7 @@ echo "Step 1: Installing Islands Dark theme extension..."
 
 # Antigravity on macOS uses ~/.antigravity/extensions/
 AG_EXT_DIR="$HOME/.antigravity/extensions"
-EXT_DIR="$AG_EXT_DIR/bwya77.islands-dark-1.0.0"
+EXT_DIR="$AG_EXT_DIR/QuantumKuba.islands-dark-1.0.0"
 rm -rf "$EXT_DIR"
 mkdir -p "$EXT_DIR"
 cp "$SCRIPT_DIR/package.json" "$EXT_DIR/"

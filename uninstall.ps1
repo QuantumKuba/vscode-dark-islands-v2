@@ -34,7 +34,7 @@ Write-Host "   3. VS Code will reload"
 # Step 3: Remove theme extension
 Write-Host ""
 Write-Host "Step 3: Removing Islands Dark theme extension..."
-$extDir = "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
+$extDir = "$env:USERPROFILE\.vscode\extensions\QuantumKuba.islands-dark-1.0.0"
 if (Test-Path $extDir) {
     Remove-Item -Recurse -Force $extDir
     Write-Host "Theme extension removed" -ForegroundColor Green
@@ -51,7 +51,7 @@ try {
         $extensions = Get-Content $extJsonPath -Raw | ConvertFrom-Json
         $before = $extensions.Count
         $extensions = @($extensions | Where-Object {
-            $_.identifier.id -ne 'bwya77.islands-dark' -and
+            $_.identifier.id -ne 'QuantumKuba.islands-dark' -and
             $_.identifier.id -ne 'your-publisher-name.islands-dark'
         })
         if ($extensions.Count -lt $before) {

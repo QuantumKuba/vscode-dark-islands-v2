@@ -33,7 +33,7 @@ echo ""
 echo "📦 Step 1: Installing Islands Dark theme extension..."
 
 # Install by copying to VS Code extensions directory
-EXT_DIR="$HOME/.vscode/extensions/bwya77.islands-dark-1.0.0"
+EXT_DIR="$HOME/.vscode/extensions/QuantumKuba.islands-dark-1.0.0"
 rm -rf "$EXT_DIR"
 mkdir -p "$EXT_DIR"
 cp "$SCRIPT_DIR/package.json" "$EXT_DIR/"

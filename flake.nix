@@ -17,13 +17,13 @@
           src = ./.;
 
           installPhase = ''
-            mkdir -p "$out/share/vscode/extensions/bwya77.islands-dark"
-            cp -r package.json themes "$out/share/vscode/extensions/bwya77.islands-dark/"
+            mkdir -p "$out/share/vscode/extensions/QuantumKuba.islands-dark"
+            cp -r package.json themes "$out/share/vscode/extensions/QuantumKuba.islands-dark/"
           '';
 
           passthru = {
-            vscodeExtUniqueId = "bwya77.islands-dark";
-            vscodeExtPublisher = "bwya77";
+            vscodeExtUniqueId = "QuantumKuba.islands-dark";
+            vscodeExtPublisher = "QuantumKuba";
             vscodeExtName = "islands-dark";
           };
         };

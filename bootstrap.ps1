@@ -1,5 +1,5 @@
 # Islands Dark Theme Bootstrap Installer for Windows
-# One-liner: irm https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/bootstrap.ps1 | iex
+# One-liner: irm https://raw.githubusercontent.com/QuantumKuba/vscode-dark-islands-v2/main/bootstrap.ps1 | iex
 
 param()
 
@@ -9,7 +9,7 @@ echo "🏝️  Islands Dark Theme Bootstrap Installer"
 echo "=========================================="
 echo ""
 
-$RepoUrl = "https://github.com/bwya77/vscode-dark-islands.git"
+$RepoUrl = "https://github.com/QuantumKuba/vscode-dark-islands-v2.git"
 $Branch = "main"
 $InstallDir = "$env:TEMP\islands-dark-temp"
 

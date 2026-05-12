@@ -47,7 +47,7 @@ Write-Host ""
 Write-Host "Step 1: Installing Islands Dark theme extension..."
 
 # Install by copying to VS Code extensions directory
-$extDir = "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
+$extDir = "$env:USERPROFILE\.vscode\extensions\QuantumKuba.islands-dark-1.0.0"
 if (Test-Path $extDir) {
     Remove-Item -Recurse -Force $extDir
 }

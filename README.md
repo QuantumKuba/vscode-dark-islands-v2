@@ -5,10 +5,10 @@ Installing and/or uninstalling this theme is highly likely to remove all VSCode 
 
 # Islands Dark
 
-<a href="https://www.buymeacoffee.com/bwya77" style="margin-right: 10px;">
+<a href="https://www.buymeacoffee.com/QuantumKuba" style="margin-right: 10px;">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
 </a>
-<a href="https://github.com/sponsors/bwya77">
+<a href="https://github.com/sponsors/QuantumKuba">
     <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" />
 </a>
 
@@ -49,13 +49,13 @@ The fastest way to install:
 #### macOS/Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/bootstrap.sh | bash
+curl -fsSL https://raw.githubusercontent.com/QuantumKuba/vscode-dark-islands-v2/main/bootstrap.sh | bash
 ```
 
 #### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/bootstrap.ps1 | iex
+irm https://raw.githubusercontent.com/QuantumKuba/vscode-dark-islands-v2/main/bootstrap.ps1 | iex
 ```
 
 #### Antigravity (macOS)
@@ -63,7 +63,7 @@ irm https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/bootstrap.
 [Antigravity](https://antigravity.google) is Google's AI-powered IDE built as a fork of VS Code.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/bootstrap-antigravity.sh | bash
+curl -fsSL https://raw.githubusercontent.com/QuantumKuba/vscode-dark-islands-v2/main/bootstrap-antigravity.sh | bash
 ```
 
 ### Manual Clone Install
@@ -73,7 +73,7 @@ If you prefer to clone first:
 #### macOS/Linux
 
 ```bash
-git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
+git clone https://github.com/QuantumKuba/vscode-dark-islands-v2.git islands-dark
 cd islands-dark
 ./install.sh
 ```
@@ -81,7 +81,7 @@ cd islands-dark
 #### Windows
 
 ```powershell
-git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
+git clone https://github.com/QuantumKuba/vscode-dark-islands-v2.git islands-dark
 cd islands-dark
 .\install.ps1
 ```
@@ -89,7 +89,7 @@ cd islands-dark
 #### Antigravity (macOS)
 
 ```bash
-git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
+git clone https://github.com/QuantumKuba/vscode-dark-islands-v2.git islands-dark
 cd islands-dark
 ./install-antigravity.sh
 ```
@@ -97,7 +97,7 @@ cd islands-dark
 #### Antigravity (Windows)
 
 ```powershell
-git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
+git clone https://github.com/QuantumKuba/vscode-dark-islands-v2.git islands-dark
 cd islands-dark
 .\install-antigravity.ps1
 ```
@@ -119,17 +119,17 @@ To run it directly without installing:
 
 ```bash
 # Run VS Code
-nix run github:bwya77/vscode-dark-islands#vscode
+nix run github:QuantumKuba/vscode-dark-islands-v2#vscode
 
 # Or run VSCodium
-nix run github:bwya77/vscode-dark-islands#vscodium
+nix run github:QuantumKuba/vscode-dark-islands-v2#vscodium
 ```
 
 To use it in your NixOS or Home Manager configuration, add it to your flake inputs:
 
 ```nix
 {
-  inputs.islands-dark.url = "github:bwya77/vscode-dark-islands";
+  inputs.islands-dark.url = "github:QuantumKuba/vscode-dark-islands-v2";
 
   outputs = { self, nixpkgs, islands-dark, ... }: {
     # Then you can add and use it:
@@ -150,18 +150,18 @@ If you prefer to install manually, follow these steps:
 Clone this repo and copy the extension files:
 
 ```bash
-git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
+git clone https://github.com/QuantumKuba/vscode-dark-islands-v2.git islands-dark
 cd islands-dark
-mkdir -p ~/.vscode/extensions/bwya77.islands-dark-1.0.0
-cp package.json ~/.vscode/extensions/bwya77.islands-dark-1.0.0/
-cp -r themes ~/.vscode/extensions/bwya77.islands-dark-1.0.0/
+mkdir -p ~/.vscode/extensions/QuantumKuba.islands-dark-1.0.0
+cp package.json ~/.vscode/extensions/QuantumKuba.islands-dark-1.0.0/
+cp -r themes ~/.vscode/extensions/QuantumKuba.islands-dark-1.0.0/
 ```
 
 On Windows (PowerShell):
 ```powershell
-git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
+git clone https://github.com/QuantumKuba/vscode-dark-islands-v2.git islands-dark
 cd islands-dark
-$ext = "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
+$ext = "$env:USERPROFILE\.vscode\extensions\QuantumKuba.islands-dark-1.0.0"
 New-Item -ItemType Directory -Path $ext -Force
 Copy-Item package.json $ext\
 Copy-Item themes $ext\themes -Recurse
@@ -308,7 +308,7 @@ cd islands-dark
 ./uninstall.sh
 
 # Or download and run directly:
-curl -fsSL https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/QuantumKuba/vscode-dark-islands-v2/main/uninstall.sh | bash
 ```
 
 **Windows (PowerShell):**
@@ -318,7 +318,7 @@ cd islands-dark
 .\uninstall.ps1
 
 # Or download and run directly:
-irm https://raw.githubusercontent.com/bwya77/vscode-dark-islands/main/uninstall.ps1 | iex
+irm https://raw.githubusercontent.com/QuantumKuba/vscode-dark-islands-v2/main/uninstall.ps1 | iex
 ```
 
 The uninstall script will:

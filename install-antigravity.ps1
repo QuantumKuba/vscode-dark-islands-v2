@@ -28,7 +28,7 @@ Write-Host "Step 1: Installing Islands Dark theme extension..."
 
 # Antigravity uses VS Code-compatible extensions
 # Install by copying to Antigravity extensions directory
-$extDir = "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
+$extDir = "$env:USERPROFILE\.vscode\extensions\QuantumKuba.islands-dark-1.0.0"
 if (Test-Path $extDir) {
     Remove-Item -Recurse -Force $extDir
 }

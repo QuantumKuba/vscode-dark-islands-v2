@@ -42,7 +42,7 @@ echo "   3. VS Code will reload"
 # Step 3: Remove theme extension
 echo ""
 echo "🗑️  Step 3: Removing Islands Dark theme extension..."
-EXT_DIR="$HOME/.vscode/extensions/bwya77.islands-dark-1.0.0"
+EXT_DIR="$HOME/.vscode/extensions/QuantumKuba.islands-dark-1.0.0"
 if [ -d "$EXT_DIR" ] || [ -L "$EXT_DIR" ]; then
     rm -rf "$EXT_DIR"
     echo -e "${GREEN}✓ Theme extension removed${NC}"
@@ -64,7 +64,7 @@ if (fs.existsSync(extJsonPath)) {
         let extensions = JSON.parse(fs.readFileSync(extJsonPath, 'utf8'));
         const before = extensions.length;
         extensions = extensions.filter(e =>
-            e.identifier?.id !== 'bwya77.islands-dark' &&
+            e.identifier?.id !== 'QuantumKuba.islands-dark' &&
             e.identifier?.id !== 'your-publisher-name.islands-dark'
         );
         if (extensions.length < before) {
